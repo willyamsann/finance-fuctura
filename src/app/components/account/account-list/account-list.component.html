@@ -1,0 +1,40 @@
+<div class="card-body">
+  <div class="table-responsive">
+    <table class="table">
+      <thead class="text-primary">
+        <th>Nome da Conta</th>
+        <th>Tipo</th>
+        <th>Valor Total</th>
+        <th>Actions</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let obj of accounts">
+          <td>{{ obj.name }}</td>
+          <td>{{ obj.type }}</td>
+          <td>{{ obj.value }}</td>
+          <td>
+            <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+              <button
+                type="button"
+                class="btn btn-outline-primary me-2"
+                id="dropdownManual"
+                ngbDropdownAnchor
+                (focus)="myDrop.open()"
+              >
+                Acoes
+              </button>
+              <div ngbDropdownMenu aria-labelledby="dropdownManual">
+                <button ngbDropdownItem (click)="delete(obj.id)">
+                  Excluir
+                </button>
+                <button ngbDropdownItem (click)="getUpdate(obj.id)">
+                  Editar
+                </button>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
