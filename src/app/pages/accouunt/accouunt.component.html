@@ -7,7 +7,10 @@
           Nova Conta
         </button>
       </div>
-      <app-account-list [accounts]="accounts"></app-account-list>
+      <app-account-list
+        [accounts]="accounts"
+        (teste)="receiverChildEvent($event)"
+      ></app-account-list>
     </div>
   </div>
 </div>

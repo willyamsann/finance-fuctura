@@ -22,4 +22,7 @@ export class AccouuntComponent implements OnInit {
     };
     this.accounts.push(account);
   }
+  receiverChildEvent(resposta) {
+    console.log("evento do filho_", resposta);
+  }
 }
