@@ -20,6 +20,7 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { AccountDetailsComponent } from "../../pages/account-details/account-details.component";
 import { MovementsComponent } from "app/pages/movements/movements.component";
 import { MovementListComponent } from "app/components/movements/movement-list/movement-list.component";
+import { CreateMovementComponent } from "app/pages/create-movement/create-movement.component";
 
 @NgModule({
   imports: [
@@ -37,6 +38,7 @@ import { MovementListComponent } from "app/components/movements/movement-list/mo
     IconsComponent,
     MapsComponent,
     AccouuntComponent,
+    CreateMovementComponent,
     AccountListComponent,
     AccountFormComponent,
     MovementsComponent,

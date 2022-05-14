@@ -11,6 +11,7 @@ import { UpgradeComponent } from "../../pages/upgrade/upgrade.component";
 import { AccouuntComponent } from "app/pages/accouunt/accouunt.component";
 import { AccountDetailsComponent } from "../../pages/account-details/account-details.component";
 import { MovementsComponent } from "app/pages/movements/movements.component";
+import { CreateMovementComponent } from "app/pages/create-movement/create-movement.component";
 
 export const AdminLayoutRoutes: Routes = [
   { path: "dashboard", component: DashboardComponent },
@@ -24,4 +25,5 @@ export const AdminLayoutRoutes: Routes = [
   { path: "account", component: AccouuntComponent },
   { path: "account-details", component: AccountDetailsComponent },
   { path: "movements", component: MovementsComponent },
+  { path: "create-movement", component: CreateMovementComponent },
 ];

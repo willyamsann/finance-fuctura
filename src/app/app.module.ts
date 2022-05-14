@@ -14,6 +14,12 @@ import { AppRoutes } from "./app.routing";
 import { AdminLayoutComponent } from "./layouts/admin-layout/admin-layout.component";
 import { NotfoundComponent } from "./pages/notfound/notfound.component";
 
+import { LOCALE_ID } from "@angular/core";
+import { registerLocaleData } from "@angular/common";
+import localePt from "@angular/common/locales/pt";
+
+registerLocaleData(localePt);
+
 @NgModule({
   declarations: [AppComponent, AdminLayoutComponent, NotfoundComponent],
   imports: [
@@ -27,7 +33,7 @@ import { NotfoundComponent } from "./pages/notfound/notfound.component";
     FooterModule,
     FixedPluginModule,
   ],
-  providers: [],
+  providers: [{ provide: LOCALE_ID, useValue: "pt-BR" }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
