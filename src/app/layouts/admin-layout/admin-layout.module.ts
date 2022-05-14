@@ -18,6 +18,8 @@ import { AccountListComponent } from "../../components/account/account-list/acco
 import { AccountFormComponent } from "../../components/account/account-form/account-form.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { AccountDetailsComponent } from "../../pages/account-details/account-details.component";
+import { MovementsComponent } from "app/pages/movements/movements.component";
+import { MovementListComponent } from "app/components/movements/movement-list/movement-list.component";
 
 @NgModule({
   imports: [
@@ -37,7 +39,9 @@ import { AccountDetailsComponent } from "../../pages/account-details/account-det
     AccouuntComponent,
     AccountListComponent,
     AccountFormComponent,
+    MovementsComponent,
     AccountDetailsComponent,
+    MovementListComponent,
     NotificationsComponent,
   ],
 })
